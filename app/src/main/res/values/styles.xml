@@ -8,4 +8,43 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- 상단 1:1:1 비율 부분 -->
+    <style name="OA_top_ratio">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="OA_top_between">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="OA_bottom_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="OA_bottom_layout_btn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:onClick">clkNoBtn</item>
+    </style>
+
+    <style name="OA_bottom_right_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">45sp</item>
+        <item name="android:onClick">clkRightBtn</item>
+    </style>
+
+
+
 </resources>

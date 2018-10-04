@@ -5,10 +5,129 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TwoActivity">
+    android:orientation="vertical"
+    tools:context=".OneActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="계산기"/>
+    <!-- 상단-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <EditText style="@style/OA_top_ratio"
+            android:maxLength="4"
+            android:id="@+id/et_no1" />
+
+        <TextView style="@style/OA_top_between"
+            android:id="@+id/tv_calc_symbol"
+            />
++
+        <EditText style="@style/OA_top_ratio"
+            android:maxLength="4"
+            android:id="@+id/et_no2" />
+
+        <TextView style="@style/OA_top_between"
+            android:text="="/>
+
+        <TextView style="@style/OA_top_ratio"
+            android:maxLength="15"
+            android:id="@+id/tv_result" />
+    </LinearLayout>
+
+    <!-- 하단-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#e48d8d"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#cfde49"
+            android:orientation="vertical">
+
+            <!-- 1줄 -->
+            <LinearLayout style="@style/OA_bottom_layout"
+                android:background="#8d1ca4">
+
+                <Button style="@style/OA_bottom_layout_btn"
+                    android:text="9"/>
+
+                <Button style="@style/OA_bottom_layout_btn"
+                    android:text="8"/>
+
+                <Button style="@style/OA_bottom_layout_btn"
+                    android:text="7"/>
+            </LinearLayout>
+
+            <!-- 2줄 -->
+            <LinearLayout style="@style/OA_bottom_layout">
+                <Button style="@style/OA_bottom_layout_btn"
+                    android:text="6"/>
+
+                <Button style="@style/OA_bottom_layout_btn"
+                    android:text="5"/>
+
+                <Button style="@style/OA_bottom_layout_btn"
+                    android:text="4"/>
+            </LinearLayout>
+
+            <!-- 3줄 -->
+            <LinearLayout style="@style/OA_bottom_layout"
+                android:background="#747474">
+
+                <Button style="@style/OA_bottom_layout_btn"
+                    android:text="3"/>
+
+                <Button style="@style/OA_bottom_layout_btn"
+                    android:text="2"/>
+
+                <Button style="@style/OA_bottom_layout_btn"
+                    android:text="1"/>
+
+            </LinearLayout>
+
+            <!-- 4줄 -->
+            <LinearLayout style="@style/OA_bottom_layout">
+                <Button style="@style/OA_bottom_layout_btn"
+                    android:text="0"/>
+
+                <Button style="@style/OA_bottom_layout_btn"
+                    android:id="@+id/btn_equal"
+                    android:layout_weight="2"
+                    android:text="="/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#3e2cc9">
+
+            <Button style="@style/OA_bottom_right_btn"
+                android:text="C"
+                />
+            <Button style="@style/OA_bottom_right_btn"
+                android:text="/"
+                />
+            <Button style="@style/OA_bottom_right_btn"
+                android:text="*"
+                />
+            <Button style="@style/OA_bottom_right_btn"
+                android:text="-"
+                />
+            <Button style="@style/OA_bottom_right_btn"
+                android:text="+"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
 </LinearLayout>
