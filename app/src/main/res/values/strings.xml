@@ -4,4 +4,10 @@
     <string name="myname">박도흠입니다.</string>
     <string name="change">값을 바꿨습니다.</string>
     <string name="calcTitle">계산기</string>
+    <string name="playerTitle">플레이어</string>
+    <string name="music1">음악1</string>
+    <string name="music2">Music2</string>
+    <string name="pause">일시정지</string>
+    <string name="play">재생</string>
+    <string name="stop">정지</string>
 </resources>

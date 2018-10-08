@@ -5,10 +5,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ThreeActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="플레이어"/>
+    <Button style="@style/TA_btn"
+        android:id="@+id/btn_1"
+        android:text="@string/music1"/>
+    <Button style="@style/TA_btn"
+        android:id="@+id/btn_2"
+        android:text="@string/music2"/>
+    <Button style="@style/TA_btn"
+        android:id="@+id/btn_3"
+        android:text="@string/pause"/>
+    <Button style="@style/TA_btn"
+        android:id="@+id/btn_4"
+        android:text="@string/stop"/>
 </LinearLayout>

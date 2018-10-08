@@ -32,6 +32,8 @@ public class OneActivity extends AppCompatActivity {
         dd2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(OneActivity.this, ThreeActivity.class);
+                startActivity(intent);
                 Toast.makeText(OneActivity.this,"버튼2",Toast.LENGTH_SHORT).show();
             }
         });
